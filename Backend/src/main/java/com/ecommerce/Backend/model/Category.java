@@ -8,6 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
+// import org.hibernate.annotations.NaturalId;
+
+
+
+
 @Entity
 @Table(name = "category")
 public class Category {
@@ -16,6 +21,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    // @NaturalId
     @Column(name = "category_name")
     private @NotBlank String categoryName;
 
@@ -55,4 +61,5 @@ public class Category {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
 }
