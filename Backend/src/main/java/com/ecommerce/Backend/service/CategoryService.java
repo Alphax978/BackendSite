@@ -35,9 +35,9 @@ public class CategoryService {
         return categoryRepo.findById(categoryId).isPresent();
     }
 
-    public boolean findByName(String categoryName) {
-        return categoryRepo.findByCategoryName(categoryName).isPresent();
-    }
+    public Category readCategory(String categoryName) {
+		return categoryRepo.findByCategoryName(categoryName);
+	}
     
 
 
