@@ -25,7 +25,7 @@ public class CategoryController
         return id;
     }
 
-    @GetMapping(path = "/getAllCategory")
+    @GetMapping(path = "/show")
     public List<CategoryDTO> getAllCategory()
     {
        List<CategoryDTO>allCategorys = categoryService.getAllCategory();
